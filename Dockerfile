@@ -1,6 +1,6 @@
 FROM alpine:3.3
 RUN apk update
-RUN apk add --update openssh py-pip build-base libffi-dev python-dev openssl-dev \
+RUN apk add --update openssh ca-certificates git py-pip build-base libffi-dev python-dev openssl-dev \
     && pip install --upgrade pip \
     && pip install ansible \
     && apk del --purge build-base libffi-dev python-dev openssl-dev \
