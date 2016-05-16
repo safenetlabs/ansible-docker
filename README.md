@@ -1,2 +1,3 @@
 # ansible-docker
-dockerize ansible
+
+Creates a containerized ansible, based on alpine.
